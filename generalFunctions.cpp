@@ -1,8 +1,5 @@
 FILE *input;
 
-void openInputFile(const char*);
-void closeFile(FILE*);
-
 void openInputFile(const char* inputfile) {
     input = fopen(inputfile, "r");
     if(input == NULL) { //Check if file opened properly

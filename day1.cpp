@@ -12,11 +12,11 @@ void day1a() {
     int numB;
 
     readToArrayday1();                  //put all input data into an array
-    for(int A = 0; A<VALUEAMOUNT; A++) {
+    for(int A = 0; A<VALUEAMOUNT; A++) {        //every for loop to go along all possible combinations.
         numA = values[A];
         for(int B = 0; B<VALUEAMOUNT; B++) {
             numB = values[B];
-            if(numA + numB == TARGETVALUE) {
+            if(numA + numB == TARGETVALUE) {    //if true, the numbers are found. No need to move on in the loops, so break.
                 found++;
                 break;
             }
@@ -25,7 +25,7 @@ void day1a() {
             break;
         }
     }
-    printf("%d", numA * numB);
+    printf("%d", numA * numB); //result had to be multiplied.
     closeFile(input);
 }
 
@@ -37,13 +37,13 @@ void day1b() {
     int numC;
 
     readToArrayday1();
-    for(int A = 0; A<VALUEAMOUNT; A++) {
+    for(int A = 0; A<VALUEAMOUNT; A++) {        //every for loop to go along all possible combinations.
         numA = values[A];
         for(int B = 0; B<VALUEAMOUNT; B++) {
             numB = values[B];
             for(int C = 0; C<VALUEAMOUNT; C++) {
                 numC = values[C];
-                if(numA + numB + numC == TARGETVALUE) {
+                if(numA + numB + numC == TARGETVALUE) { //if true, the numbers are found. No need to move on in the loops, so break.
                     found++;
                     break;
                 }
@@ -56,7 +56,7 @@ void day1b() {
             break;
         }
     }
-    printf("%d", numA * numB * numC);
+    printf("%d", numA * numB * numC); //for result, multiply the numbers
     closeFile(input);
 }
 

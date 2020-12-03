@@ -7,15 +7,15 @@ int slope(int placementRow, int placementCol);
 
 void day3a() {
     openInputFile("day3.txt");
-    createField();
-    printf("%d", slope(1, 3));
+    createField();              //creates the field from the input file
+    printf("%d", slope(1, 3));  //prints result
     closeFile(input);
 }
 
 void day3b() {
     openInputFile("day3.txt");
     createField();
-    printf("%d", slope(1, 1) * slope(1, 3) * slope(1, 5) * slope(1, 7) * slope(2, 1));
+    printf("%d", slope(1, 1) * slope(1, 3) * slope(1, 5) * slope(1, 7) * slope(2, 1)); //result was multiply multiple numbers
     closeFile(input);
 }
 
@@ -36,14 +36,14 @@ int slope(int placementRow, int placementCol) {
     int result = 0;
     int currow = 0;
     int curcol = 0;
-    while(currow < FIELDLENGTH){
-        if(field[currow][curcol] == '#') {
+    while(currow < FIELDLENGTH){    //if currow exceeds the fieldlength, the bottom has reached.
+        if(field[currow][curcol] == '#') {  //if this location has an #, you'll hit a tree.
             result++;
         }
-        currow = currow + placementRow;
-        curcol = curcol + placementCol;
+        currow = currow + placementRow; //go down the specific amount of rows
+        curcol = curcol + placementCol; //go right the specific amount of columns
         if(curcol >= FIELDWIDTH) {
-            curcol = curcol - FIELDWIDTH;
+            curcol = curcol - FIELDWIDTH; //the field has the same pattern farther to the right, this put it at the right place in the field again.
         }
     }
     return (result);
