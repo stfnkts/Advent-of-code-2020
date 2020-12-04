@@ -10,9 +10,9 @@
 #include <string.h>
 
 #include "generalFunctions.cpp"
-#include "day1.cpp"
-#include "day2.cpp"
-#include "day3.cpp"
-#include "day4.cpp"
+#include "codePerDay\day1.cpp"
+#include "codePerDay\day2.cpp"
+#include "codePerDay\day3.cpp"
+#include "codePerDay\day4.cpp"
 
 
