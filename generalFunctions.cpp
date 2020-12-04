@@ -9,7 +9,6 @@ void openInputFile(const char* inputfile) {
 
 void closeFile(FILE* file) {
     if(fclose(file)) {              //Check if file closed properly
-        printf("Failed to close file\n");
         perror("Failed to open input file");
     }
 }
