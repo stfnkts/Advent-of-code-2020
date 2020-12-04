@@ -7,9 +7,9 @@ void readToArrayday1();
 
 void day1a() {
     openInputFile("day1.txt");          //open inputfile with data
-    int found = 0;
-    int numA;
-    int numB;
+    uint8_t found = 0;
+    uint16_t numA;
+    uint16_t numB;
 
     readToArrayday1();                  //put all input data into an array
     for(int A = 0; A<VALUEAMOUNT; A++) {        //every for loop to go along all possible combinations.
@@ -31,10 +31,10 @@ void day1a() {
 
 void day1b() {
     openInputFile("day1.txt");
-    int found = 0;
-    int numA;
-    int numB;
-    int numC;
+    uint8_t found = 0;
+    uint16_t numA;
+    uint16_t numB;
+    uint16_t numC;
 
     readToArrayday1();
     for(int A = 0; A<VALUEAMOUNT; A++) {        //every for loop to go along all possible combinations.
@@ -61,7 +61,7 @@ void day1b() {
 }
 
 void readToArrayday1() {
-    int i = 0;
+    uint16_t i = 0;
     while((fscanf(input,"%d",&values[i]))!=EOF) { //read file, put number values into array
         i++;
     }

@@ -1,4 +1,4 @@
-#define DAY 4
+#define DAY 26
 /*day 0 will go to all days (will cause errors in this stage because not all functions exist
  *day 1 - 25 will run the specific day
  *day 26 will run the days made, the main has to be changed if a day has been added

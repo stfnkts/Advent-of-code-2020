@@ -16,10 +16,10 @@ void day2b() {
 }
 
 void readandSolveday2a() {
-    int result = 0;
+    uint16_t result = 0;
 
     while(!feof(input)) {
-        int counter = 0;
+        uint16_t counter = 0;
         int minRange;
         int maxRange;
         char character;
@@ -39,12 +39,12 @@ void readandSolveday2a() {
 }
 
 void readandSolveday2b() {
-    int result = 0;
+    uint16_t result = 0;
 
     while(!feof(input)) {
         int placeA;
         int placeB;
-        int check = 0;
+        uint8_t check = 0;
         char character;
         char password[PASSWORDMAXLENGTH];
 

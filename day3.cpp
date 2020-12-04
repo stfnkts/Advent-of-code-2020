@@ -3,7 +3,7 @@
 
 char field[FIELDLENGTH][FIELDWIDTH];
 void createField();
-int slope(int placementRow, int placementCol);
+uint16_t slope(uint8_t placementRow, uint8_t placementCol);
 
 void day3a() {
     openInputFile("day3.txt");
@@ -21,7 +21,7 @@ void day3b() {
 
 void createField() {
     char buffer[FIELDWIDTH];
-    int row = 0;
+    uint16_t row = 0;
 
     while(!feof(input)) {
         fscanf(input, "%s", buffer);
@@ -32,8 +32,8 @@ void createField() {
     }
 }
 
-int slope(int placementRow, int placementCol) {
-    int result = 0;
+uint16_t slope(uint8_t placementRow, uint8_t placementCol) {
+    uint16_t result = 0;
     int currow = 0;
     int curcol = 0;
     while(currow < FIELDLENGTH){    //if currow exceeds the fieldlength, the bottom has reached.

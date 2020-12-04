@@ -1,7 +1,5 @@
 #include "main.h"
 
-
-
 int main()
 {
     #if (DAY == 26)
@@ -19,6 +17,11 @@ int main()
     day3a();
     printf("\n\nday 3 part b:\n");
     day3b();
+    printf("\n\n");
+    printf("day 4 part a:\n");
+    day4a();
+    printf("\n\nday 4 part b:\n");
+    day4b();
     #endif
     #if (DAY == 1 || DAY == 0)
     printf("day 1 part a:\n");
