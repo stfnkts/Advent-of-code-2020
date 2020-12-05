@@ -8,11 +8,12 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
+#include <math.h>
 
 #include "generalFunctions.cpp"
 #include "codePerDay\day1.cpp"
 #include "codePerDay\day2.cpp"
 #include "codePerDay\day3.cpp"
 #include "codePerDay\day4.cpp"
-
+#include "codePerDay\day5.cpp"
 

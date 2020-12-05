@@ -22,6 +22,11 @@ int main()
     day4a();
     printf("\n\nday 4 part b:\n");
     day4b();
+    printf("\n\n");
+    printf("day 5 part a:\n");
+    day5a();
+    printf("\n\nday 5 part b:\n");
+    day5b();
     #endif
     #if (DAY == 1 || DAY == 0)
     printf("day 1 part a:\n");
