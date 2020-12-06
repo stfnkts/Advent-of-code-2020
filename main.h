@@ -16,4 +16,5 @@
 #include "codePerDay\day3.cpp"
 #include "codePerDay\day4.cpp"
 #include "codePerDay\day5.cpp"
+#include "codePerDay\day6.cpp"
 
